@@ -1,75 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motivasi Belajar - NextLevelMind.id</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextLevelMind.id</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 2rem;
-      background-color: #f9fafb;
-      color: #111827;
+      padding: 0;
+      background-color: #f7f8fc;
+      color: #333;
     }
     header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      margin-bottom: 2rem;
     }
     header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #3730a3;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .hero h2 {
       font-size: 2rem;
-      color: #4f46e5;
+      margin-bottom: 1rem;
     }
-    article {
-      max-width: 800px;
+    .hero p {
+      max-width: 600px;
       margin: 0 auto;
-      background: white;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
       padding: 2rem;
+    }
+    .feature-card {
+      background-color: white;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    article h2 {
-      color: #3730a3;
-    }
-    article p {
-      line-height: 1.7;
-      margin-bottom: 1.2rem;
+    .feature-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #4f46e5;
+      font-weight: bold;
+      text-decoration: none;
     }
     footer {
+      background-color: #111827;
+      color: white;
       text-align: center;
+      padding: 1rem;
       margin-top: 3rem;
-      color: #6b7280;
-    }
-    a {
-      color: #4f46e5;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>NextLevelMind.id</h1>
+    <p>Langkah kecilmu untuk sukses besar dimulai di sini</p>
   </header>
 
-  <article>
-    <h2>Motivasi Belajar untuk Mahasiswa</h2>
-    <p>
-      Dalam perjalanan menjadi pribadi yang sukses, motivasi bukan sesuatu yang datang tiba-tiba. Ia dibangun perlahan, dari niat sederhana—seperti ingin membahagiakan orang tua, membuktikan pada diri sendiri, dan keluar dari lingkaran kemiskinan.
-    </p>
-    <p>
-      Belajar bukan hanya soal mendapatkan nilai bagus, tapi tentang membentuk pola pikir kuat, disiplin diri, dan ketekunan. Setiap pagi saat kamu bangun, ingat bahwa setiap usaha kecilmu hari ini akan menjadi pondasi kesuksesanmu esok hari.
-    </p>
-    <p>
-      Saat rasa malas datang, tanyakan pada dirimu: "Apa yang sebenarnya aku perjuangkan?" Biarkan jawaban itu mendorong langkahmu, sekecil apa pun.
-    </p>
-    <p>
-      Teruskan perjuanganmu. Satu hari, kamu akan melihat ke belakang dan bersyukur karena kamu tidak pernah menyerah.
-    </p>
-    <a href="/nextlevelmind/">← Kembali ke Beranda</a>
-  </article>
+  <nav>
+    <a href="#artikel">Artikel</a>
+    <a href="#tools">Tools</a>
+    <a href="#refleksi">Jurnal Refleksi</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Selamat Datang di Web Pengembangan Diri Mahasiswa</h2>
+    <p>Di NextLevelMind.id, kamu bisa belajar manajemen waktu, membangun disiplin, refleksi diri, dan mengasah produktivitas — semua dengan bantuan alat bantu gratis dan panduan yang terstruktur.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Artikel Inspiratif</h3>
+      <p>Pelajari tips praktis untuk kuliah, manajemen waktu, dan mindset sukses yang mudah dipahami.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Tools & Template</h3>
+      <p>Download planner, template Google Calendar, Notion, dan alat bantu lain untuk membantumu lebih fokus.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Jurnal Refleksi</h3>
+      <p>Gunakan panduan jurnal mingguan untuk mengevaluasi dirimu dan terus berkembang sedikit demi sedikit.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Motivasi Belajar</h3>
+      <p>Baca artikel inspiratif untuk menjaga semangat dan tujuan belajarmu tetap menyala.</p>
+      <a href="motivasi.html">Baca Artikel</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 NextLevelMind.id - Artikel Pengembangan Diri</p>
+    <p>© 2025 NextLevelMind.id - Dibuat dengan semangat untuk bertumbuh.</p>
   </footer>
 </body>
 </html>
